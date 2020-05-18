@@ -1,0 +1,62 @@
+<html>
+
+    <head>
+        <title>Formulario de registro</title>
+        <meta charset="UTF-8">
+
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+        <script src="plugins/passtrength.js"></script>
+        <link rel="stylesheet" href="plugins/passtrength.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script type="text/javascript" src="validacion.js"></script>
+
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+
+    <body>
+
+        <form class="formulario">
+
+            <h3>FORMULARIO DE REGISTRO</h3>
+            
+            <br>
+
+            <div><label>Nombre:</label><input type="text" class="nombre" value="" placeholder="Ej. Fernando"></div>
+
+            <div><label>Apellidos:</label><input type="text" class="apellidos" value="" placeholder="Ej. García López"></div>
+
+            <div><label>DNI:</label><input type="text" class="dni" value="" placeholder="Ej. 12345678A"></div>
+
+            <div>
+                <label>Edad:</label>
+                <input type="radio" id="mayor" name="edad" class="edad" value="mayor">
+                <label for="mayor">Soy mayor</label><br>
+                <input type="radio" id="menor" name="edad" class="edad" value="menor">
+                <label for="menor">Soy menor</label>
+            </div>
+
+            <div><label>E-mail:</label><input type="text" class="email" value="" placeholder="Ej. fernando@mail.com"></div>
+
+            <div><label>Password:</label><input type="password" class="password" value=""></div>
+            <div class="password_formato" style="background-color:lightblue">
+                <p>El password debe contener al menos</p>
+                <p> - Una letra minúscula</p>
+                <p> - Una letra mayúscula</p>
+                <!-- <p> - Un número</p> -->
+                <p> - Un carácter especial: @ $ ! % * ? &</p>
+            </div>
+
+            <div><input type="submit" value="ENVIAR" class="enviar"></div>
+
+        </form>
+
+        <div class="disculpas"></div>
+
+        <div><input type="submit" value="Regresar al formulario" class="volver"></div>
+
+    </body>
+
+</html>
